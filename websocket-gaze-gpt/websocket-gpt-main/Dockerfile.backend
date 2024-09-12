@@ -1,0 +1,23 @@
+FROM python:3.9-slim
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y git ffmpeg
+
+# Set the working directory
+WORKDIR /app
+
+
+# Install dependencies globally
+COPY requirements.txt .
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+# Copy the project files
+COPY . .
+
+# Expose ports
+EXPOSE 8765 8000 5000
+
+# Command to run the Python servers
+CMD ["bash", "-c", "python configserver.py & python filehosting.py & python websocketserver.py"]
+

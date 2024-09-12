@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../eye-gaze-gpt-main/eye-gaze-gpt-main"
+		},
+		{
+			"path": "../../WhisperX"
+		}
+	],
+	"settings": {}
+}

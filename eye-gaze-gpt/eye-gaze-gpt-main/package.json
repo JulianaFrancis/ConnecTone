@@ -1,0 +1,57 @@
+{
+  "name": "eye-gaze-gpt",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.12",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.2",
+    "chart.js": "^4.4.2",
+    "openai": "^4.28.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-record-webcam": "^1.1.2",
+    "react-scripts": "5.0.1",
+    "react-simple-keyboard": "^3.7.94",
+    "react-use-websocket": "^4.8.1",
+    "react-webcam": "^7.2.0",
+    "simple-keyboard": "^3.7.65",
+    "simple-keyboard-layouts": "^3.3.109",
+    "socket.io-client": "^4.7.5",
+    "swipe-keyboard": "^2.2.511",
+    "victory": "^37.0.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prestart": "find ./node_modules/simple-keyboard-layouts -name '*.d.ts' -delete"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}

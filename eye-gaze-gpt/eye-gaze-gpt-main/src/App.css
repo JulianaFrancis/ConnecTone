@@ -1,0 +1,104 @@
+input {
+  width: 100%;
+  height: 8vh;
+  ;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.simple-keyboard {
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.inline {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.wideButton {
+  height: 8vh;
+  width: 100%;
+
+}
+
+.wideButtonNoHeight {
+  width: 100%;
+}
+
+.SpeakableText {
+  padding: 0.5vh;
+  height: 33%;
+}
+
+.TextBox {
+  padding-left: 50px;
+  display: 'flex';
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.greyBG {
+  background-color: #b5b5b5 !important;
+}
+
+.moodButtons {
+  width: 100%;
+}
+
+.selectedMoodButton {
+  background-color: chartreuse !important;
+}
+
+.lowerarea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallButton {
+  height: 8vh;
+  /* Same height as other buttons */
+  width: 20vw;
+  padding: 20px;
+  /* Same padding as other buttons */
+  font-size: 16px;
+  /* Adjust font size as needed */
+  border: none;
+  /* Remove border */
+  background-color: #007bff;
+  /* Example color, you can change it */
+  color: #ffffff;
+  /* Text color */
+  cursor: pointer;
+  /* Show cursor on hover */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+  transition: background-color 0.3s ease;
+  /* Smooth transition on hover */
+}
+
+.smallButton:hover {
+  background-color: #0056b3;
+  /* Darker color on hover */
+}
+
+.last-recorded-text-bar {
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}

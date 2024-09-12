@@ -1,0 +1,18 @@
+FROM node:14
+
+# Install necessary packages
+RUN apt-get update && apt-get install -y git
+
+# Set the working directory
+WORKDIR /app
+
+
+# Install dependencies and nodemon
+RUN npm install
+RUN npm install -g nodemon
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Command to run the React app with nodemon for automatic reloading
+CMD ["nodemon", "--watch", "src", "--exec", "npm", "start"]

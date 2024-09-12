@@ -1,0 +1,44 @@
+THIS SHOULD BE RENAMED TO config.json AND APPROPRIATE VALUES SHOULD BE FILLED IN (ttsServer, transcriptionServer, any configuration parameters)
+{
+  "apiUrl": "http://localhost:5000",
+  "socketUrl": "ws://127.0.0.1:8765",
+  "keyboardLayout": "swedish",
+  "fileServer": "http://localhost:8000",
+  "ttsServer": "YourTTSServer/?text=",
+  "transcriptionServer": "YourTranscriptionServer/transcribe",
+  "tts_params": {
+    "rate": {
+      "min": 0.5,
+      "max": 2.0,
+      "displayName": "Speaking Rate",
+      "default": 1.0,
+      "group": "Speech",
+      "url_param": "prosody"
+    },
+    "readLevel": {
+      "min": 0,
+      "max": 3,
+      "displayName": "Read Level",
+      "default": 1,
+      "group": "Style",
+      "url_param": "spk_vec"
+    },
+    "pitch": {
+      "min": 0.5,
+      "max": 2.0,
+      "displayName": "Pitch",
+      "default": 1.5,
+      "group": "Speech",
+      "url_param": "f0"
+    },
+    
+    "spontaneity": {
+      "min": 0,
+      "max": 3,
+      "displayName": "Spontaneity",
+      "default": 1,
+      "group": "Style",
+      "url_param": "spk_vec"
+    }
+  }
+}

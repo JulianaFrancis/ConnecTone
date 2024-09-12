@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./websocket-gaze-gpt/websocket-gpt-main
+      dockerfile: Dockerfile.backend
+    volumes:
+      - ./websocket-gaze-gpt/websocket-gpt-main:/app
+      - ./config.json:/app/config/config.json  # Use an intermediate directory
+      - ./SystemPrompt.txt:/app/SystemPrompt.txt  # Map SystemPrompt.txt
+
+    environment:
+      - OPENAI_KEY=${OPENAI_KEY}
+      - FLASK_ENV=development  # Ensure reloading is enabled
+    ports:
+      - "8765:8765"
+      - "8000:8000"
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./eye-gaze-gpt/eye-gaze-gpt-main
+      dockerfile: Dockerfile.frontend
+    volumes:
+      - ./eye-gaze-gpt/eye-gaze-gpt-main:/app
+    environment:
+      - OPENAI_KEY=${OPENAI_KEY}
+    ports:
+      - "3000:3000"

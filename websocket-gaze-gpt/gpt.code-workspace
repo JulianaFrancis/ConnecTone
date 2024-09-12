@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../eye-gaze-gpt"
+		},
+		{
+			"path": "../DockerFile"
+		}
+	],
+	"settings": {}
+}
