@@ -43,3 +43,7 @@ Follow these steps to set up the ConnecTone project:
    docker compose up
    ```
 
+
+For more details, refer to the published paper:  
+*Juliana Francis, Éva Székely, Joakim Gustafson. "ConnecTone: A Modular AAC System Prototype with Contextual Generative Text Prediction and Style-Adaptive Conversational TTS." INTERSPEECH 2024.*  
+Available at: [https://www.isca-archive.org/interspeech_2024/francis24_interspeech.html](https://www.isca-archive.org/interspeech_2024/francis24_interspeech.html)
